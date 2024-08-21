@@ -12,12 +12,29 @@ You can clone this repo to run the project locally, or navigate to the workspace
 To complete this project, you will need to:
 
 * Set up node environment
-* Create a new endpoint in the server.js file
+```shell
+cd .\image-processing-microservice\
+npm install
+```
+
+* Run application on local environment
+```shell
+npm start
+```
+
 * Deploying your system
+```shell
+eb init
+eb create
+eb deploy
+```
 
 ## Testing
 
 Successful URL responses should have a 200 code. Ensure that you include error codes for the scenario that someone uploads something other than an image and for other common errors.
+
+Open in browser:
+http://image-processing-microservice-dev.us-west-2.elasticbeanstalk.com/filterimage?image_url=https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_tabby_and_white_kitten_n01.jpg
 
 ## License
 
